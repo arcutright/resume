@@ -10,7 +10,7 @@
 cutright```@```c<!--- grr robot parsers -->ase```.```edu | 412```736```33<!--- grr robot parsers -->31 | https://www.github.com/arcutright/ | https://www.linkedin.com/in/
 
 ## Work Experience (sorted by date)
-#### Securable io | Software Engineering Intern | Oct 2016 — present
+#### Software Engineering Intern | Securable io | Oct 2016 — present
 - Full stack developer using Vue.js, Pug, Ruby on Rails, MySQL, and Moodle
 - Created several integrations for popular web services such as GSuite, Twitter, and Slack
 - Rapid prototyped a DNS updating tool for Windows
