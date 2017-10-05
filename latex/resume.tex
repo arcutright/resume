@@ -1,0 +1,178 @@
+% (c) 2017 Aaron Cutright <ahc49@case.edu> http://github.com/arcutright
+%
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\usepackage{parcolumns}
+\usepackage{enumitem}
+\definecolor{shadingcolor}{gray}{0.85}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\edusubheading}[4]{
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+	\end{tabular*}\vspace{-6pt}}
+\newcommand{\resitem}[1]{\item #1}
+\newcommand{\resheading}[1]{{\large \colorbox{shadingcolor}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+\def\labelitemi{--}
+%-----------------------------------------------------------
+\begin{document}
+%
+%					HEADER
+%
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\huge Aaron Cutright}  & 412.736.3331 (cell)\\
+ &  cutright@case.edu \\
+ &  https://github.com/arcutright \\
+ &  https://bitbucket.org/countcutright \\
+\end{tabular*}
+\\
+\vspace{0.1in}
+
+%
+%					EDUCATION
+%
+\resheading{Education}
+
+\vspace{0.1in}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Case Western Reserve University} &  \textbf{GPA: 3.59} \\
+	\textit{BS Computer Science} & (Anticipated) May. 2018\\
+	\textit{BSE Computer Engineering} & (Anticipated) May. 2018 \\
+	\textit{Minors: Artificial Intelligence, Mathematics}
+\end{tabular*}
+
+\vspace{0.1in}
+%
+%					WORK EXPERIENCE
+%
+\begin{minipage}{\linewidth}
+\vfill\noindent
+\begin{minipage}[t]{0.6\linewidth}
+	\resheading{Work Experience}
+	
+	\vspace{0.1in}
+	\ressubheading{CWRU EECS Department}{Cleveland, OH}{Circuits Lab Instructor, Grader}{Sep 2017 -- Present}
+	\begin{itemize}[leftmargin=*,noitemsep]
+		\resitem{Assist students in completing lab assignments}
+		\resitem{Instruct students on proper usage of lab equipment}
+		\resitem{Grade student assignments}
+	\end{itemize}
+	
+	\ressubheading{Securable IO}{Cleveland, OH}{Software Developer}{Oct 2016 -- July 2017}
+	\begin{itemize}[leftmargin=*,noitemsep]
+		\resitem{Created several integrations for popular web services such as GSuite, Twitter, and Slack}
+		\resitem{Optimized MySQL queries for high-volume throughput and created a MySQL load tester}
+		\resitem{Created a DNS updating tool in C\# for Windows}
+		\resitem{Front-end web development using Vue.js}
+		\resitem{Back-end development using Ruby on Rails}
+	\end{itemize}
+	
+	\ressubheading{CWRU Student Affairs IT}{Cleveland, OH}{Web Content Assistant}{Dec 2015 -- May 2016}
+	\begin{itemize}[leftmargin=*,noitemsep]
+		\resitem{Developed new JavaScript-based tool for virtual campus tours to replace Flash version and incorporate new features}
+		\resitem{Assist professors and students with website issues}
+		\resitem{Update content on Student Affairs subdomain}
+	\end{itemize}
+	
+	\ressubheading{Carnegie Mellon SAFARI Group}{Pittsburgh, PA}{Intern}{Dec 2014 -- Aug 2014}
+	\begin{itemize}[leftmargin=*,noitemsep]
+		\resitem{Developed custom power management infrastructure for DRAM}
+		\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+			\resitem{Custom board layout in KiCad EDA}
+			\resitem{Custom control and monitoring software for Linux}
+		\end{itemize}
+		\resitem{Aided graduate students in computer architecture research and development, related to memory technologies for higher stability and quality of service}
+	\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.35\linewidth}
+	%\begin{minipage}[t]{\linewidth}
+	%	\resheading{Project Highlights}
+	%	
+	%	\vspace{0.1in}
+	%	\begin{description}[topsep=0pt]
+	%		\item[2007--2008] One of four upstream maintainers of the SELinux tool chain.
+	%	\end{description}
+	%\end{minipage}
+	%\vspace{0.1in}
+	%
+	%
+	%				SKILLS
+	%
+	\begin{minipage}[t]{\linewidth}
+		\resheading{Languages/Skills}
+		
+		\begin{description}[noitemsep]
+			\item[Strong:]
+			Java, JavaScript, Ruby, C\#, Rails, Verilog
+			\item[Weak:]
+			C{}\verb!++!, C, Scheme, Unity5, MySQL, Vue.js, Node.js, Pug, HTML/5, CSS/3, Moodle
+			
+			\vspace{0.1in}
+			\item[Skills:]
+			Soldering, modifying electronics, 
+			recording, editing, and rendering video and audio, 
+			Computer maintenance and repair
+			\item[Misc Skills:]
+			Home remodeling and repair, carpentry,
+			basics of 3D CAD for 3D printing,
+			basic microprocessor and FPGA usage
+		\end{description}
+	\end{minipage}
+\end{minipage}
+\end{minipage}
+
+\vspace{0.1in}
+
+%
+%					RELEVANT COURSEWARE
+%
+\resheading{Relevant/Interesting Courses}
+
+\vspace{0.1in}
+\begin{minipage}{\linewidth}
+\vfill\noindent
+\begin{minipage}[b]{0.5\textwidth}
+	\raggedright
+	\textbf{Computer Science} \\
+	$^{*}$EECS 293 - Software Craftsmanship \\
+	EECS \ 393 - Software Engineering \\
+	EECS \ 444 - Computer Security \\
+	MATH 408 - Intro to Cryptology \\
+	EECS \ 345 - Programming Language Concepts \\
+\end{minipage}
+\begin{minipage}[b]{0.5\textwidth}
+	\raggedright
+	\textbf{Computer Engineering} \\
+	$^{*}$EECS 318 - VLSI / CAD \\
+	EECS \ 301 - Digital Logic Lab (FPGA) \\
+	EECS \ 314 - Computer Architecture \\
+	EECS \ 315 - Digital System Design \\
+	EECS \ 338 - Intro to Operating Systems \\
+\end{minipage}
+
+\centerline{* = currently enrolled}
+\end{minipage}
+
+\end{document}

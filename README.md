@@ -9,14 +9,35 @@
                                                                       
 cutright```@```c<!--- grr robot parsers -->ase```.```edu | 412```736```33<!--- grr robot parsers -->31 | https://www.github.com/arcutright/ | https://www.linkedin.com/in/
 
+See `latex/resume.pdf` for a more professional version
+
+## Education
+#### B.S in **Computer Science** and B.S.E in **Computer Engineering**, Case Western Reserve University, anticipated 2018
+- GPA: 3.59
+- Dean's High Honors — Spring 2015, Fall 2015, Spring 2016
+- Dean's Honors — Fall 2014, Fall 2016
+- Clubs: Archery, Design Build Fly, Hacker Society, IEEE, ACM
+
+#### Taylor Allderdice High School, Pittsburgh PA, completed 2014
+- GPA: 4.41
+- Honors: National Honor Society, AP Scholar with Honors
+- Clubs: Crew Team, Math League, Debate Team, FIRST Robotics Club
+
 ## Work Experience (sorted by date)
-#### Software Engineering Intern | Securable io | Oct 2016 — present
+
+#### Circuits Lab Instructor | CWRU EECS Department | Sep 2017 — present
 - Full stack developer using Vue.js, Pug, Ruby on Rails, MySQL, and Moodle
 - Created several integrations for popular web services such as GSuite, Twitter, and Slack
 - Rapid prototyped a DNS updating tool for Windows
 - Optimized SQL queries for high-volume throughput and created an internal SQL load testing service
 
-#### Customer Service Associate | CWRU PE and Athletics Operations | Nov 2015 — present
+#### Software Engineering Intern | Securable io | Oct 2016 — Jul 2017
+- Full stack developer using Vue.js, Pug, Ruby on Rails, MySQL, and Moodle
+- Created several integrations for popular web services such as GSuite, Twitter, and Slack
+- Rapid prototyped a DNS updating tool for Windows
+- Optimized SQL queries for high-volume throughput and created an internal SQL load testing service
+
+#### Customer Service Associate | CWRU PE and Athletics Operations | Nov 2015 — May 2016
 - Assist customers with any concerns or needs at the facilities
 - Work as access control at front desk by checking IDs and logging guests
 
@@ -64,18 +85,6 @@ cutright```@```c<!--- grr robot parsers -->ase```.```edu | 412```736```33<!--- g
 #### Volunteer | Greater Pittsburgh Community Food Bank | Fall 2008 — Fall 2009
 - Created several ceramic bowls to be sold during the Empty Bowls Dinner, a fund raiser for the Greater Pittsburgh Community Food Bank
 - Volunteered at the Empty Bowls Dinner itself, where I helped to organize the bowls and acted as an aid to anyone who walked in and had questions
-
-## Education
-#### B.S in **Computer Science** and B.S.E in **Computer Engineering**, Case Western Reserve University, anticipated 2018
-- GPA: 3.59
-- Dean's High Honors — Spring 2015, Fall 2015, Spring 2016
-- Dean's Honors — Fall 2014, Fall 2016
-- Clubs: Archery, Design Build Fly
-
-#### Taylor Allderdice High School, Pittsburgh PA, completed 2014
-- GPA: 4.41
-- Honors: National Honor Society, AP Scholar with Honors
-- Clubs: Crew Team, Math League, Debate Team, FIRST Robotics Club
 
 ## Programming Languages/Frameworks
 **Strong:** Java, C#, Ruby, JavaScript/ES6, MySQL, Git, Linux
