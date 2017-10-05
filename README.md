@@ -1,3 +1,5 @@
+See `latex/resume.pdf` for a more professional version
+
 ```
      _                            ____      _        _       _     _   
     / \   __ _ _ __ ___  _ __    / ___|   _| |_ _ __(_) __ _| |__ | |_ 
@@ -8,8 +10,6 @@
 ```
                                                                       
 cutright```@```c<!--- grr robot parsers -->ase```.```edu | 412```736```33<!--- grr robot parsers -->31 | https://www.github.com/arcutright/ | https://www.linkedin.com/in/
-
-See `latex/resume.pdf` for a more professional version
 
 ## Education
 #### B.S in **Computer Science** and B.S.E in **Computer Engineering**, Case Western Reserve University, anticipated 2018
