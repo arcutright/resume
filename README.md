@@ -9,14 +9,15 @@ See `latex/resume.pdf` for a more professional version
                                                        |___/                
 ```
                                                                       
-cutright```@```c<!--- grr robot parsers -->ase```.```edu | 412```736```33<!--- grr robot parsers -->31 | https://www.github.com/arcutright/ | https://www.linkedin.com/in/
+cutright```@```c<!--- grr robot parsers -->ase```.```edu | 412```736```33<!--- grr robot parsers -->31 | https://www.github.com/arcutright/ | https://www.bitbucket.org/countcutright/ | https://www.linkedin.com/in/
 
 ## Education
-#### B.S in **Computer Science** and B.S.E in **Computer Engineering**, Case Western Reserve University, anticipated 2018
-- GPA: 3.59
+#### B.S in **Computer Science** and B.S.E in **Computer Engineering**, Case Western Reserve University, (In progress) May 2018
+##### Minors: Artificial Intelligence, Mathematics
+- GPA: 3.55
 - Dean's High Honors — Spring 2015, Fall 2015, Spring 2016
 - Dean's Honors — Fall 2014, Fall 2016
-- Clubs: Archery, Design Build Fly, Hacker Society, IEEE, ACM
+- Clubs: Archery, Design Build Fly, Hacker Society/ACM, IEEE
 
 #### Taylor Allderdice High School, Pittsburgh PA, completed 2014
 - GPA: 4.41
@@ -25,11 +26,15 @@ cutright```@```c<!--- grr robot parsers -->ase```.```edu | 412```736```33<!--- g
 
 ## Work Experience (sorted by date)
 
-#### Circuits Lab Instructor | CWRU EECS Department | Sep 2017 — present
-- Full stack developer using Vue.js, Pug, Ruby on Rails, MySQL, and Moodle
-- Created several integrations for popular web services such as GSuite, Twitter, and Slack
-- Rapid prototyped a DNS updating tool for Windows
-- Optimized SQL queries for high-volume throughput and created an internal SQL load testing service
+#### Data Structures TA | CWRU EECS Department | Jan 2018 — present
+- Lead recitations, office hours to help students
+- Assist in managing official course site and email help list
+- Grade student assignments
+
+#### Circuits Lab Instructor | CWRU EECS Department | Sep 2017 — Dec 2017
+- Assist students in completing lab assignments
+- Instruct students on proper usage of lab equipment
+- Grade student assignments
 
 #### Software Engineering Intern | Securable io | Oct 2016 — Jul 2017
 - Full stack developer using Vue.js, Pug, Ruby on Rails, MySQL, and Moodle
