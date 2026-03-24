@@ -1,5 +1,5 @@
 % (c) 2017 Aaron Cutright <ahc49@case.edu> http://github.com/arcutright
-%
+% x
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -8,17 +8,44 @@
 \usepackage{color}
 \usepackage{parcolumns}
 \usepackage{enumitem}
-\definecolor{shadingcolor}{gray}{0.85}
+\usepackage{soul}
+
+% blue-theme
+% \definecolor{companytextfg}{RGB}{0,85,179}  % dark blue
+% \definecolor{companytextfg}{RGB}{0,75,179}  % dark blue
+% \definecolor{companytextfg}{RGB}{5,63,179}  % 053fb3 (cobalt)
+% \definecolor{sectionheaderbg}{RGB}{134,152,173}  % blue-gray
+% \definecolor{sectionheaderbg}{RGB}{116,129,150}  % blue-gray
+% \definecolor{sectionheaderbg}{RGB}{63,98,150}  % blue-gray
+\definecolor{companytextfg}{RGB}{0,90,179}  % dark blue
+\definecolor{sectionheaderbg}{RGB}{0,90,179} % bright navy blue
+\definecolor{sectionheaderfg}{RGB}{255,255,255} % white text on top
+
+% grayscale
+\definecolor{companytextfg}{RGB}{0,0,0} % black text
+\definecolor{sectionheaderbg}{gray}{0.85} % gray shading
+\definecolor{sectionheaderfg}{RGB}{0,0,0} % black text
+
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Adjust margins to 0.5in on all sides
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-0.5in}
-\addtolength{\textheight}{1.0in}
+% Adjust margins
+\usepackage[margin=0.5in]{geometry} % all sides same margin
+% \usepackage[left=0.4in,right=0.4in,top=0.5in,bottom=0.5in]{geometry} % different per-side margins
+
+% manually spec 0.5" margins
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1.0in}
+% \addtolength{\topmargin}{-0.5in}
+% \addtolength{\textheight}{1.0in}
+
+% fonts (ref https://www.overleaf.com/learn/latex/Font_typefaces)
+\usepackage{lmodern}  % serif, similar to "default"
+% \usepackage[T1]{fontenc}
+% \usepackage{tgbonum}  % serif, thick
+% \renewcommand{\familydefault}{\sfdefault}  % change to sans serif
 
 %-----------------------------------------------------------
 %Custom commands
@@ -28,11 +55,22 @@
 		\textit{#3} & \textit{#4} \\
 	\end{tabular*}\vspace{-6pt}}
 \newcommand{\resitem}[1]{\item #1}
-\newcommand{\resheading}[1]{{\large \colorbox{shadingcolor}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\resheading}[1]{
+	{\large \colorbox{sectionheaderbg}{
+		\begin{minipage}{\textwidth}{
+			\textcolor{sectionheaderfg}{\textbf{#1 \vphantom{p\^{E}}}}
+		}
+		\end{minipage}
+	}}}
 \newcommand{\ressubheading}[4]{
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
+		\textcolor{companytextfg}{\ul{\textbf{#1}}} & #2 \\
 		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\ressubsubheading}[2]{
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	    \vspace{-12pt} \\
+		\textit{#1} & \textit{#2} \\
 \end{tabular*}\vspace{-6pt}}
 \def\labelitemi{--}
 %-----------------------------------------------------------
@@ -42,37 +80,55 @@
 %
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
 \textbf{\huge Aaron Cutright}  & 412.736.3331 (cell)\\
- &  cutright@case.edu \\
+ &  aaron.cutright@ksb.com \\
  &  https://github.com/arcutright \\
- &  https://bitbucket.org/countcutright \\
 \end{tabular*}
 \\
 \vspace{0.1in}
 
-%
-%					EDUCATION
-%
-\resheading{Education}
-
-\vspace{0.1in}
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-	\textbf{Case Western Reserve University} &  \textbf{GPA: 3.55} \\
-	\textit{BS Computer Science} & (In progress) May. 2018\\
-	\textit{BSE Computer Engineering} & (In progress) May. 2018 \\
-	\textit{Minors: Artificial Intelligence, Mathematics}
-\end{tabular*}
-
-\vspace{0.1in}
+%-----------------------------------------------------------
 %
 %					WORK EXPERIENCE
 %
 \begin{minipage}{\linewidth}
 \vfill\noindent
-\begin{minipage}[t]{0.6\linewidth}
+\begin{minipage}[t]{0.7\linewidth}
 	\resheading{Work Experience}
-	
 	\vspace{0.1in}
-	\ressubheading{CWRU EECS Department}{Cleveland, OH}{Data Structures TA, Grader}{Jan 2018 -- Present}
+
+	\ressubheading{KSB GIW, Inc.}{Grovetown, GA}{IoT Product Development Manager}{Nov 2023 -- Present}
+	\begin{itemize}[leftmargin=*,noitemsep]
+		\resitem{Lead in-house development of GIW SLYsight and GIW RAMSL product lines, including custom hardware systems
+		(sensor design, PCB design, system architecture), software systems, customer-facing web dashboards,
+		server infrastructure, third-party integrations, etc.}
+		\resitem{Lead Engineering IoT product development, manage development contracts with third parties}
+		\resitem{Form and lead IoT department within Engineering, plan/construct building}
+		\resitem{Assist in relevant company acquisitions and patent persuals}
+	\end{itemize}
+	\ressubsubheading{Manager of Engineering IT Systems}{Feb 2022 -- Nov 2023}
+	\begin{itemize}[leftmargin=*,noitemsep]
+		\resitem{Lead Engineering department's software development teams,
+		including Engineering software, web development, and database management}
+		\resitem{Lead migration of legacy VB.NET and Perl codebases to C\# and F\#}
+		\resitem{Manage all Engineering department server infrastructure
+		and provide support to Hydraulic Lab and other departments}
+		\resitem{Collaborate to share computing resources and data with other departments}
+	\end{itemize}
+	\ressubsubheading{IoT \& Automation Development Manager}{Jul 2020 -- Feb 2022}
+	\begin{itemize}[leftmargin=*,noitemsep]
+		\resitem{Develop Engineering IoT products and collaborate with partner companies}
+		\resitem{Lead development of SLYSEL Engineering software}
+		\resitem{Lead development of GIW Hydraulic Lab's TestBay data collection system}
+		\resitem{Lead migration of legacy Fortran projects to C\# and F\#}
+		\resitem{Manage Engineering department SLURM cluster (HPC)}
+	\end{itemize}
+	\ressubsubheading{Engineering Software Developer}{Aug 2018 -- Jul 2020}
+	\begin{itemize}[leftmargin=*,noitemsep]
+		\resitem{Develop in-house SLYSEL Engineering software for slurry pump selections}
+		\resitem{Work with physics researchers and CFD specialists to develop physics models and wear programs}
+	\end{itemize}
+
+	\ressubheading{CWRU EECS Department}{Cleveland, OH}{Data Structures TA, Grader}{Jan 2018 -- May 2018}
 	\begin{itemize}[leftmargin=*,noitemsep]
 		\resitem{Lead recitations, office hours to help students}
 		\resitem{Assist in managing official course site and email help list}
@@ -87,6 +143,55 @@
 		\resitem{Front-end web development using Vue.js}
 		\resitem{Back-end development using Ruby on Rails}
 	\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.27\linewidth}
+	%\begin{minipage}[t]{\linewidth}
+	%	\resheading{Project Highlights}
+	%	
+	%	\vspace{0.1in}
+	%	\begin{description}[topsep=0pt]
+	%		\item[2007--2008] Projects go here
+	%	\end{description}
+	%\end{minipage}
+	%\vspace{0.1in}
+
+    %-----------------------------------------------------------
+	%
+	%				SKILLS
+	%
+	\begin{minipage}[t]{\linewidth}
+		\resheading{Languages/Skills}
+		
+		\begin{description}[noitemsep]
+			\item[Strong:]
+			Python, C\#, F\#, Fortran, JavaScript, Bash
+			\item[Weak:]
+			Java, C{}\verb!++!, C, Ruby, Rails, Perl, SQL, Verilog, VHDL, Unity5, Android java, Scheme, Lisp, Vue.js, Pug, HTML/5, CSS/3, Prolog, Matlab, LaTeX
+			
+			\vspace{0.1in}
+			\item[Specialized software skills:]
+			Audio and ultrasonic signal analysis,
+			basic neural network design and training (mostly forecasting-focused RNN and GPR design)
+			\item[Misc electronics skills:]
+			Repairing electronics,
+			basic 3D CAD, 3D printing,
+			computer maintenance and repair
+			\item[Misc Skills:]
+			Home remodeling and repair, carpentry,
+			automotive repair
+		\end{description}
+	\end{minipage}
+\end{minipage}
+\end{minipage}
+
+%-----------------------------------------------------------
+%  next page - Work experience cont.
+%
+
+\begin{minipage}{\linewidth}
+\vfill\noindent
+\begin{minipage}[t]{0.7\linewidth}
 	
 	\ressubheading{CWRU Student Affairs IT}{Cleveland, OH}{Web Content Assistant}{Dec 2015 -- May 2016}
 	\begin{itemize}[leftmargin=*,noitemsep]
@@ -105,74 +210,79 @@
 		\resitem{Aided graduate students in computer architecture research and development, related to memory technologies for higher stability and quality of service}
 	\end{itemize}
 \end{minipage}
-\hfill
-\begin{minipage}[t]{0.35\linewidth}
-	%\begin{minipage}[t]{\linewidth}
-	%	\resheading{Project Highlights}
-	%	
-	%	\vspace{0.1in}
-	%	\begin{description}[topsep=0pt]
-	%		\item[2007--2008] Projects go here
-	%	\end{description}
-	%\end{minipage}
-	%\vspace{0.1in}
-	%
-	%
-	%				SKILLS
-	%
-	\begin{minipage}[t]{\linewidth}
-		\resheading{Languages/Skills}
-		
-		\begin{description}[noitemsep]
-			\item[Strong:]
-			Java, C\#, JavaScript, Ruby,  Rails, Verilog
-			\item[Weak:]
-			C{}\verb!++!, C, Unity5, Android, Scheme, MySQL, Vue.js, Node.js, Pug, HTML/5, CSS/3
-			
-			\vspace{0.1in}
-			\item[Skills:]
-			Soldering, modifying electronics, 
-			recording, editing, and rendering video and audio, 
-			Computer maintenance and repair
-			\item[Misc Skills:]
-			Home remodeling and repair, carpentry,
-			basics of 3D CAD for 3D printing,
-			basic microprocessor and FPGA usage
-		\end{description}
-	\end{minipage}
 \end{minipage}
-\end{minipage}
+
+\vspace{0.3in}
+
+%-----------------------------------------------------------
+%
+%					EDUCATION
+%
+\resheading{Education}
+
+\vspace{0.1in}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Case Western Reserve University} &  \textbf{GPA: 3.55} \\
+	\textit{B.S. Computer Science} & May. 2018\\
+	\textit{B.S.E. Computer Engineering} & May. 2018 \\
+	\textit{Minors: Artificial Intelligence, Mathematics, Electrical Engineering}
+\end{tabular*}
+
+
+\vspace{0.3in}
+
+\resheading{Publications}
 
 \vspace{0.1in}
 
-%
-%				RELEVANT COURSEWORK
-%
-\resheading{Relevant/Interesting Courses}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} p{0.9\textwidth} r}
+  \begin{minipage}[t]{\linewidth}
+    \textbf{WearGP: A UQ/ML wear prediction framework for slurry pump impellers and casings}
 
-\vspace{0.1in}
-\begin{minipage}{\linewidth}
-\vfill\noindent
-\begin{minipage}[b]{0.5\textwidth}
-	\raggedright
-	\textbf{Computer Science} \\
-	EECS \ 293 - Software Craftsmanship \\
-	EECS \ 393 - Software Engineering \\
-	EECS \ 345 - Programming Language Concepts \\
-	EECS \ 444 - Computer Security \\
-	MATH 408 - Cryptology \\
-\end{minipage}
-\begin{minipage}[b]{0.5\textwidth}
-	\raggedright
-	\textbf{Computer Engineering} \\
-	EECS \ 318 - VLSI / CAD \\
-	EECS \ 301 - Digital Logic Lab (FPGA) \\
-	EECS \ 314 - Computer Architecture \\
-	EECS \ 315 - Digital System Design \\
-	EECS \ 338 - Intro to Operating Systems \\
-\end{minipage}
+	\textit{Alt. title: ``WearGP: A machine learning wear prediction
+framework for slurry pump impellers and casings
+under different operating conditions''}
+    \begin{itemize}[leftmargin=*,noitemsep]
+      \item This research used Gaussian Process (GP) regression to analyze the impact of varying
+	  physical dimensions of slurry pump parts on 3D CFD wear results across multiple operating conditions.
+      \item This paper was later submitted to the \textit{ASME 2020 Fluids Engineering Division Summer Meeting}.
+      \item I primarily helped to develop the workflows for data preprocessing, batched CFD runs,
+	  and data mining on the results, and also assisted with GP kernel design.
+    \end{itemize}
+  \end{minipage}
+  & \hfill 2019
+\end{tabular*}
 
-%\centerline{* = currently enrolled}
-\end{minipage}
+% \vspace{0.1in}
+% 
+% %
+% %				RELEVANT COURSEWORK
+% %
+% \resheading{Relevant/Interesting Courses}
+% 
+% \vspace{0.1in}
+% \begin{minipage}{\linewidth}
+% \vfill\noindent
+% \begin{minipage}[b]{0.5\textwidth}
+% 	\raggedright
+% 	\textbf{Computer Science} \\
+% 	EECS \ 293 - Software Craftsmanship \\
+% 	EECS \ 393 - Software Engineering \\
+% 	EECS \ 345 - Programming Language Concepts \\
+% 	EECS \ 444 - Computer Security \\
+% 	MATH 408 - Cryptology \\
+% \end{minipage}
+% \begin{minipage}[b]{0.5\textwidth}
+% 	\raggedright
+% 	\textbf{Computer Engineering} \\
+% 	EECS \ 318 - VLSI / CAD \\
+% 	EECS \ 301 - Digital Logic Lab (FPGA) \\
+% 	EECS \ 314 - Computer Architecture \\
+% 	EECS \ 315 - Digital System Design \\
+% 	EECS \ 338 - Intro to Operating Systems \\
+% \end{minipage}
+% 
+% %\centerline{* = currently enrolled}
+% \end{minipage}
 
 \end{document}
